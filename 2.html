@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: 10px auto;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            outline: 3px solid #777;
+        }
+
+        a:hover {
+            color: black;
+            background-color: green;
+            box-shadow: 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">首页</a>
+    <a href="2.html">刷新</a>
+</body>
+<script>
+    var a = prompt("请输入字符串：");
+    var i = 0,j = a.length-1;
+    var is = true;
+    for (;i < j;) {
+        if (a[i] !== a[j]){
+            is = false;
+        }
+        i++;
+        j--;
+    }
+    alert("请打开控制台查看结果<^-^>")
+    console.log(is);
+</script>
+</html>

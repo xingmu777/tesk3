@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: 10px auto;
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            outline: 3px solid #777;
+        }
+
+        a:hover {
+            color: black;
+            background-color: green;
+            box-shadow: 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">首页</a>
+    <a href="11.html">刷新</a>
+</body>
+<script>
+    var s = prompt("请输入数组（例：1,2,3）：");
+    var a = s.split(",");
+    var target = Number(prompt("目标值？"));
+    var b = [];
+    for (var n = 0;n<a.length;n++) {
+        a[n] = Number(a[n]);
+    }
+    for (var i = 0;i<a.length;i++) {
+        for (var j = i+1;j<a.length;j++) {
+            if (a[i] + a[j] === target) {
+                b.push(i);
+                b.push(j);
+            }
+        }
+    }
+    alert("请打开控制台查看结果<^-^>");
+    if(b.length>0){
+        console.log(b);
+    } else { console.log(null);}
+</script>
+</html>
