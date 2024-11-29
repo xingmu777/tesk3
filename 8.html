@@ -33,13 +33,18 @@
     </style>
 </head>
 <body>
+    <h2>
+        8. 请编写一段逻辑编在一个数组检索一个目标值返回目标值在数组中的索引。如果目标值不存在于数组中，则返回-1。（两种方法）
+        例子: [1,2,3] 、 1 => 0
+        例子: [1,2,3] 、 4 => -1
+    </h2>
     <a href="index.html">首页</a>
     <a href="8.html">刷新</a>
 </body>
 <script>
     var s = prompt("请输入数组（例：1,2,3）：");
     var a = s.split(",");
-    var b = prompt("请输入目标值：");
+    var b = prompt("请输入目标值(例：1)：");
     var sum = "";
     for(var i=0;i<a.length;i++) {
         if(b === a[i]) {

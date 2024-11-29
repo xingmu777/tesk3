@@ -33,13 +33,18 @@
     </style>
 </head>
 <body>
+    <h2>
+        11. 给定任意一个数字数组和目标值 target, 找出数组两个元素之和等于 target 的下标数组
+        例子: [1,2,3,4] 、 2 => null
+        例子: [1,2,3,4] 、 3 => [0, 1]
+    </h2>
     <a href="index.html">首页</a>
     <a href="11.html">刷新</a>
 </body>
 <script>
-    var s = prompt("请输入数组（例：1,2,3）：");
+    var s = prompt("请输入数组（例：1,2,3,4）：");
     var a = s.split(",");
-    var target = Number(prompt("目标值？"));
+    var target = Number(prompt("目标值？(例：3)"));
     var b = [];
     for (var n = 0;n<a.length;n++) {
         a[n] = Number(a[n]);
